@@ -200,6 +200,12 @@ RCT_CUSTOM_VIEW_PROPERTY(zoom, NSNumber, RNCamera)
     [view updateZoom];
 }
 
+RCT_CUSTOM_VIEW_PROPERTY(exposure, NSNumber, RNCamera)
+{
+    [view setExposure:[RCTConvert CGFloat:json]];
+    [view updateExposure];
+}
+
 RCT_CUSTOM_VIEW_PROPERTY(whiteBalance, NSInteger, RNCamera)
 {
     [view setWhiteBalance:[RCTConvert NSInteger:json]];
