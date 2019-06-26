@@ -55,6 +55,7 @@
 - (void)updateFocusDepth;
 - (void)updateAutoFocusPointOfInterest;
 - (void)updateZoom;
+- (void)updateExposure;
 - (void)updateWhiteBalance;
 - (void)updatePictureSize;
 // Face Detection props
